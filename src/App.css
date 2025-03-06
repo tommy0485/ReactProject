@@ -1,0 +1,16 @@
+body {
+  background-color: #00008B; /* Dark blue background */
+  color: white; /* White text */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.IonTitle {
+  text-align: center;
+  font-size: 2em; /* Larger font size */
+}
