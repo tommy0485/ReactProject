@@ -1,6 +1,6 @@
 body {
-  background-color: #00008B; /* Dark blue background */
-  color: white; /* White text */
+  background-color: white; /* Change background color to white */
+  color: black; /* Change text color to black */
   margin: 0;
   font-family: Arial, sans-serif;
 }
@@ -13,4 +13,69 @@ body {
 .IonTitle {
   text-align: center;
   font-size: 2em; /* Larger font size */
+}
+
+.logo {
+  height: 120px; /* Increase the height to make the logo twice as big */
+  margin-right: 10px; /* Space between the logo and the title */
+}
+
+.ion-padding {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the top */
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.content-center {
+  text-align: center;
+  margin-top: 40px; /* Add margin to the top */
+}
+
+.subtitle {
+  font-size: 1.5em; /* Subtitle font size */
+  margin-bottom: 20px;
+}
+
+.image-spot {
+  width: 200px;
+  height: 200px;
+  background-color: #f0f0f0; /* Placeholder background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px auto; /* Center the image and add margin below */
+}
+
+.image-spot img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Left-align the links */
+  margin-top: 20px;
+  padding-left: 20px; /* Ensure the links are aligned to the left */
+}
+
+.link {
+  background: none;
+  border: none;
+  color: black; /* Change link color to black */
+  text-decoration: none;
+  font-size: 1.5em; /* Increase font size */
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: block; /* Ensure the links are displayed as block elements */
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.logout-button {
+  margin-right: 10px; /* Add some margin to the right */
 }

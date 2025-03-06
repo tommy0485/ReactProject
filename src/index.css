@@ -1,6 +1,6 @@
 body {
-  background-color: #00008B; /* Dark blue background */
-  color: white; /* White text */
+  background-color: white; /* Change background color to white */
+  color: black; /* Change text color to black */
   margin: 0;
   font-family: Arial, sans-serif;
 }
