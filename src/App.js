@@ -38,7 +38,7 @@ function App() {
           <button className="link">Settings</button>
         </div>
         <div className="content-center">
-          <h2 className="subtitle">Recommended Artist</h2>
+          <h2 className="subtitle">Featured Artist</h2>
           <div className="image-spot">
             <img src={recommendedArtist} alt="Recommended Artist" />
           </div>
