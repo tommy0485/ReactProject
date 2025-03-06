@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { db } from './index';
 import { IonApp, IonHeader, IonTitle, IonToolbar, IonContent } from '@ionic/react';
+import './App.css'; // Import the CSS file
 
 function App() {
   const [data, setData] = useState(null);
@@ -22,7 +23,7 @@ function App() {
     <IonApp>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Welcome to My React Project</IonTitle>
+          <IonTitle className="IonTitle">Welcome to Your Music Service</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
