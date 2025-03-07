@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
+import './index.css'; // Import the CSS file
 
 // Firebase configuration
 const firebaseConfig = {
