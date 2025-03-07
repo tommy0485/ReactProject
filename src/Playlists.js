@@ -5,7 +5,8 @@ import { IonApp, IonHeader, IonTitle, IonToolbar, IonContent, IonButton } from '
 import { Link } from 'react-router-dom';
 import './App.css'; // Import the CSS file
 import logo from './logo.png'; // Import the logo
-import recommendedArtist from './recommended-artist.png'; // Import the recommended artist image
+import playlist1 from './playlist1.png'; // Import the recommended artist image
+import playlist2 from './playlist2.png'; // Import the new playlist image
 
 function Playlists() {
   useEffect(() => {
@@ -36,9 +37,13 @@ function Playlists() {
           <button className="link">Settings</button>
         </div>
         <div className="content-center">
-          <h2 className="subtitle">My Playlists</h2>
+          <h2 className="subtitle">Contemporary</h2>
           <div className="image-spot">
-            <img src={recommendedArtist} alt="Recommended Artist" />
+            <img src={playlist1} alt="Playlist 1" />
+          </div>
+          <h2 className="subtitle">Jazz</h2>
+          <div className="image-spot">
+            <img src={playlist2} alt="Playlist 2" />
           </div>
         </div>
       </IonContent>
