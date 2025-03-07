@@ -34,7 +34,7 @@ function Playlists() {
           <Link to="/" className="link">Home</Link>
           <Link to="/history" className="link">History</Link>
           <Link to="/newartists" className="link">Discover Something New</Link>
-          <button className="link">Settings</button>
+          <Link to="/settings" className="link">Settings</Link>
         </div>
         <div className="content-center">
           <div className="playlists-row">

@@ -98,3 +98,19 @@ body {
   margin-right: 10px; /* Add some margin to the right */
   color: black !important; /* Ensure logout button text color remains black */
 }
+
+.checkbox-row {
+  display: flex;
+  justify-content: center; /* Center the checkboxes */
+  gap: 20px; /* Space between the checkboxes */
+}
+
+.checkbox-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.large-label {
+  font-size: 1.5em; /* Larger font size for labels */
+}
