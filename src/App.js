@@ -9,6 +9,7 @@ import recommendedArtist from './recommended-artist.png'; // Import the recommen
 import Playlists from './Playlists'; // Import the Playlists component
 import History from './History'; // Import the History component
 import NewArtists from './NewArtists'; // Import the NewArtists component
+import Settings from './Settings'; // Import the Settings component
 
 function App() {
   useEffect(() => {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/playlists" component={Playlists} />
           <Route path="/history" component={History} />
           <Route path="/newartists" component={NewArtists} />
+          <Route path="/settings" component={Settings} />
           <Route path="/">
             <IonHeader>
               <IonToolbar>
@@ -42,7 +44,7 @@ function App() {
                 <Link to="/playlists" className="link">Playlists</Link>
                 <Link to="/history" className="link">History</Link>
                 <Link to="/newartists" className="link">Discover Something New</Link>
-                <button className="link">Settings</button>
+                <Link to="/settings" className="link">Settings</Link>
               </div>
               <div className="content-center">
                 <h2 className="subtitle">Featured Artist</h2>

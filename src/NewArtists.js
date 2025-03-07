@@ -34,7 +34,7 @@ function NewArtists() {
           <Link to="/" className="link">Home</Link>
           <Link to="/playlists" className="link">Playlists</Link>
           <Link to="/history" className="link">History</Link>
-          <button className="link">Settings</button>
+          <Link to="/settings" className="link">Settings</Link>
         </div>
         <div className="content-center">
           <div className="playlists-row">

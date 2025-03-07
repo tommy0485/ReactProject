@@ -32,7 +32,7 @@ function History() {
           <Link to="/" className="link">Home</Link>
           <Link to="/playlists" className="link">Playlists</Link>
           <Link to="/newartists" className="link">Discover Something New</Link>
-          <button className="link">Settings</button>
+          <Link to="/settings" className="link">Settings</Link>
         </div>
         <div className="content-center">
           <h2 className="subtitle">You have to listen to music before there's a song history. Start listening now!</h2>
