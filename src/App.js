@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import axios from 'axios';
 import { db } from './index';
 import { IonApp, IonHeader, IonTitle, IonToolbar, IonContent, IonButton } from '@ionic/react';
@@ -7,12 +7,9 @@ import logo from './logo.png'; // Import the logo
 import recommendedArtist from './recommended-artist.png'; // Import the recommended artist image
 
 function App() {
-  const [data, setData] = useState(null);
-
   useEffect(() => {
     axios.get("https://binaryjazz.us/wp-json/genrenator/v1/genre/")
       .then(response => {
-        setData(response.data);
         // Optionally store data in Firestore
         db.collection("facts").doc("wVxqRwCoIVoDsMqWGqHeHe").set({
           current: response.data,
