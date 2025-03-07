@@ -1,0 +1,116 @@
+body {
+  background-color: #00008B !important; /* Change background color to dark blue */
+  color: black !important; /* Ensure text color remains black */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.IonTitle {
+  text-align: center;
+  font-size: 2em; /* Larger font size */
+  color: white !important; /* Ensure title text color remains white */
+}
+
+.logo {
+  height: 120px; /* Increase the height to make the logo twice as big */
+  margin-right: 10px; /* Space between the logo and the title */
+}
+
+.ion-padding {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the top */
+  align-items: center;
+  min-height: 100vh; /* Ensure content is scrollable */
+  overflow-y: auto; /* Ensure content is scrollable */
+  color: black !important; /* Ensure content text color remains black */
+}
+
+.content-center {
+  text-align: center;
+  margin-top: 2px; /* Further reduce margin to move the content up */
+  color: black !important; /* Ensure subtitle text color remains black */
+}
+
+.playlists-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between the playlists */
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subtitle {
+  font-size: 1.5em; /* Subtitle font size */
+  margin-bottom: 20px;
+  color: black !important; /* Ensure subtitle text color remains black */
+}
+
+.image-spot {
+  width: 400px; /* Increase width to make the image twice as big */
+  height: 400px; /* Increase height to make the image twice as big */
+  background-color: #f0f0f0; /* Placeholder background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px auto; /* Center the image and add margin below */
+}
+
+.image-spot img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Left-align the links */
+  margin-top: 20px;
+  padding-left: 20px; /* Ensure the links are aligned to the left */
+  color: black !important; /* Ensure links text color remains black */
+}
+
+.link {
+  background: none;
+  border: none;
+  color: black !important; /* Ensure link color remains black */
+  text-decoration: none;
+  font-size: 1.5em; /* Increase font size */
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: block; /* Ensure the links are displayed as block elements */
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.logout-button {
+  margin-right: 10px; /* Add some margin to the right */
+  color: black !important; /* Ensure logout button text color remains black */
+}
+
+.checkbox-row {
+  display: flex;
+  justify-content: center; /* Center the checkboxes */
+  gap: 20px; /* Space between the checkboxes */
+}
+
+.checkbox-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.large-label {
+  font-size: 1.5em; /* Larger font size for labels */
+}
