@@ -37,13 +37,19 @@ function Playlists() {
           <button className="link">Settings</button>
         </div>
         <div className="content-center">
-          <h2 className="subtitle">Contemporary</h2>
-          <div className="image-spot">
-            <img src={playlist1} alt="Playlist 1" />
-          </div>
-          <h2 className="subtitle">Jazz</h2>
-          <div className="image-spot">
-            <img src={playlist2} alt="Playlist 2" />
+          <div className="playlists-row">
+            <div className="playlist">
+              <h2 className="subtitle">Contemporary</h2>
+              <div className="image-spot">
+                <img src={playlist1} alt="Playlist 1" />
+              </div>
+            </div>
+            <div className="playlist">
+              <h2 className="subtitle">Jazz</h2>
+              <div className="image-spot">
+                <img src={playlist2} alt="Playlist 2" />
+              </div>
+            </div>
           </div>
         </div>
       </IonContent>
