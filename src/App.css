@@ -13,7 +13,7 @@ body {
 .IonTitle {
   text-align: center;
   font-size: 2em; /* Larger font size */
-  color: white !important; /* Ensure title text color remains black */
+  color: white !important; /* Ensure title text color remains white */
 }
 
 .logo {
@@ -26,7 +26,8 @@ body {
   flex-direction: column;
   justify-content: flex-start; /* Align items to the top */
   align-items: center;
-  height: 100vh; /* Full viewport height */
+  min-height: 100vh; /* Ensure content is scrollable */
+  overflow-y: auto; /* Ensure content is scrollable */
   color: black !important; /* Ensure content text color remains black */
 }
 
@@ -34,6 +35,18 @@ body {
   text-align: center;
   margin-top: 2px; /* Further reduce margin to move the content up */
   color: black !important; /* Ensure subtitle text color remains black */
+}
+
+.playlists-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between the playlists */
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .subtitle {
