@@ -7,6 +7,7 @@ import './App.css'; // Import the CSS file
 import logo from './logo.png'; // Import the logo
 import recommendedArtist from './recommended-artist.png'; // Import the recommended artist image
 import Playlists from './Playlists'; // Import the Playlists component
+import History from './History'; // Import the History component
 
 function App() {
   useEffect(() => {
@@ -25,6 +26,7 @@ function App() {
       <Router>
         <Switch>
           <Route path="/playlists" component={Playlists} />
+          <Route path="/history" component={History} />
           <Route path="/">
             <IonHeader>
               <IonToolbar>
@@ -36,7 +38,7 @@ function App() {
             <IonContent className="ion-padding">
               <div className="links">
                 <Link to="/playlists" className="link">Playlists</Link>
-                <button className="link">History</button>
+                <Link to="/history" className="link">History</Link>
                 <button className="link">Discover Something New</button>
                 <button className="link">Settings</button>
               </div>
