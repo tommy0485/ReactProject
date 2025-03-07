@@ -5,10 +5,8 @@ import { IonApp, IonHeader, IonTitle, IonToolbar, IonContent, IonButton } from '
 import { Link } from 'react-router-dom';
 import './App.css'; // Import the CSS file
 import logo from './logo.png'; // Import the logo
-import playlist1 from './playlist1.png'; // Import the recommended artist image
-import playlist2 from './playlist2.png'; // Import the new playlist image
 
-function Playlists() {
+function History() {
   useEffect(() => {
     axios.get("https://binaryjazz.us/wp-json/genrenator/v1/genre/")
       .then(response => {
@@ -25,36 +23,23 @@ function Playlists() {
       <IonHeader>
         <IonToolbar>
           <img src={logo} alt="Logo" className="logo" />
-          <IonTitle className="IonTitle">Playlists</IonTitle>
+          <IonTitle className="IonTitle">History</IonTitle>
           <IonButton className="logout-button" slot="end">Logout</IonButton>
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
         <div className="links">
           <Link to="/" className="link">Home</Link>
-          <Link to="/history" className="link">History</Link>
+          <Link to="/playlists" className="link">Playlists</Link>
           <Link to="/newartists" className="link">Discover Something New</Link>
           <button className="link">Settings</button>
         </div>
         <div className="content-center">
-          <div className="playlists-row">
-            <div className="playlist">
-              <h2 className="subtitle">Contemporary</h2>
-              <div className="image-spot">
-                <img src={playlist1} alt="Playlist 1" />
-              </div>
-            </div>
-            <div className="playlist">
-              <h2 className="subtitle">Jazz</h2>
-              <div className="image-spot">
-                <img src={playlist2} alt="Playlist 2" />
-              </div>
-            </div>
-          </div>
+          <h2 className="subtitle">You have to listen to music before there's a song history. Start listening now!</h2>
         </div>
       </IonContent>
     </IonApp>
   );
 }
 
-export default Playlists;
+export default History;
