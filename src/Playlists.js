@@ -32,8 +32,8 @@ function Playlists() {
       <IonContent className="ion-padding">
         <div className="links">
           <Link to="/" className="link">Home</Link>
-          <button className="link">History</button>
-          <button className="link">Discover Something New</button>
+          <Link to="/history" className="link">History</Link>
+          <Link to="/newartists" className="link">Discover Something New</Link>
           <button className="link">Settings</button>
         </div>
         <div className="content-center">
