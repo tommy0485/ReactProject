@@ -1,16 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import axios from 'axios';
 import { db } from './index';
-import { IonApp, IonHeader, IonTitle, IonToolbar, IonContent } from '@ionic/react';
+import { IonApp, IonHeader, IonTitle, IonToolbar, IonContent, IonButton } from '@ionic/react';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import './App.css'; // Import the CSS file
+import logo from './logo.png'; // Import the logo
+import recommendedArtist from './recommended-artist.png'; // Import the recommended artist image
+import Playlists from './Playlists'; // Import the Playlists component
 
 function App() {
-  const [data, setData] = useState(null);
-
   useEffect(() => {
     axios.get("https://binaryjazz.us/wp-json/genrenator/v1/genre/")
       .then(response => {
-        setData(response.data);
         // Optionally store data in Firestore
         db.collection("facts").doc("wVxqRwCoIVoDsMqWGqHeHe").set({
           current: response.data,
@@ -21,14 +22,34 @@ function App() {
 
   return (
     <IonApp>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle className="IonTitle">Welcome to Your Music Service</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent className="ion-padding">
-        {data ? <p>{data[0]}</p> : <p>Loading...</p>}
-      </IonContent>
+      <Router>
+        <Switch>
+          <Route path="/playlists" component={Playlists} />
+          <Route path="/">
+            <IonHeader>
+              <IonToolbar>
+                <img src={logo} alt="Logo" className="logo" />
+                <IonTitle className="IonTitle">Welcome to Your Music Service</IonTitle>
+                <IonButton className="logout-button" slot="end">Logout</IonButton>
+              </IonToolbar>
+            </IonHeader>
+            <IonContent className="ion-padding">
+              <div className="links">
+                <Link to="/playlists" className="link">Playlists</Link>
+                <button className="link">History</button>
+                <button className="link">Discover Something New</button>
+                <button className="link">Settings</button>
+              </div>
+              <div className="content-center">
+                <h2 className="subtitle">Featured Artist</h2>
+                <div className="image-spot">
+                  <img src={recommendedArtist} alt="Recommended Artist" />
+                </div>
+              </div>
+            </IonContent>
+          </Route>
+        </Switch>
+      </Router>
     </IonApp>
   );
 }
